@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <h2>Checkout</h2>
+
+      <div class="checkout-content">
+        <div class="shipping-details">
+          <h3>Shipping Details</h3>
+          <form>
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+            <input type="text" placeholder="Phone" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Shipping Address" required />
+            <input type="text" placeholder="City" required />
+            <select required>
+              <option value="">Select Country</option>
+              <option value="Nigeria">Nigeria</option>
+            </select>
+            <select required>
+              <option value="">Select State</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Ogun">Ogun</option>
+            </select>
+            <textarea placeholder="Notes (Optional)"></textarea>
+          </form>
+
+          <button id="select-shipping">Choose a Shipping Method</button>
+        </div>
+
+        <div class="order-summary">
+          <h3>Your Order</h3>
+          <div class="order-item">
+            <p>The Divine Jersey - Burgundy</p>
+            <p>₦95,000</p>
+          </div>
+          <div class="order-item">
+            <p>X6 Tank Top - Black</p>
+            <p>₦25,000</p>
+          </div>
+          <div class="order-item">
+            <p>The Divine Jersey - Black</p>
+            <p>₦105,000</p>
+          </div>
+          <p><strong>Subtotal:</strong> ₦0.00</p>
+          <p id="shipping-cost"><strong>Shipping:</strong> ₦0.00</p>
+          <p><strong>Total:</strong> <span id="total-cost">₦0.00</span></p>
+
+          <h3>Choose Payment Method</h3>
+          <label>
+            <input type="radio" name="payment" checked /> Pay Online
+          </label>
+
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shipping Modal -->
+    <div class="modal" id="shipping-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Select Shipping</h3>
+        <label>
+          <input
+            type="radio"
+            name="shipping"
+            value="4000"
+            style="width: 20px;"
+            data-location="Lagos State"
+          />
+          Lagos State - ₦4,000
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="shipping"
+            value="3000"
+            style="width: 20px;"
+
+            data-location="Flat Rate"
+          />
+          Flat Rate (Abeokuta, Ifo, Sango) - ₦3,000
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="shipping"
+            value="0"
+            style="width: 20px;"
+
+            data-location="Customer Pick-up"
+          />
+          Customer Pick-up - ₦0.00
+        </label>
+        <button id="apply-shipping">Apply</button>
+      </div>
+    </div>
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>We offer the best quality products with great deals. Shop now and enjoy a seamless experience.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section customer-service">
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe to get the latest offers and updates.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 YourCompany. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

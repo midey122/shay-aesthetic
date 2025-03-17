@@ -1,0 +1,117 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.checkout-container {
+  width: 100%;
+  margin: 20px auto;
+  background-color: white;
+  height: 100%;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+h2,
+h3 {
+  text-align: center;
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-details,
+.order-summary {
+  width: 45%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #000;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #333;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.place-order {
+  margin-top: 20px;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.close-modal {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content label {
+  display: flex;
+  margin: 15px 0;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .shipping-details,
+  .order-summary {
+    width: 100%;
+  }
+}
