@@ -159,8 +159,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
-
+.product-card h5{
+  position: absolute;
+  color: rgba(255, 255, 255, 0.831);
+  font-size: 17px;
+  top: 35%;
+  font-weight: 600;
+  left: 25%;
+}
 .product-card:hover {
   transform: scale(1.05);
 }
@@ -172,14 +180,16 @@ body {
 
 .product-card h3 {
   font-size: 16px;
-  margin: 10px 0;
+  margin: 5px 0;
   color: #333;
+  text-align: left;
 }
 
-.price {
-  font-size: 18px;
+.product-card .price {
+  font-size: 15px;
   font-weight: bold;
-  color: green;
+  color: rgb(49, 49, 49);
+  text-align: left;
 }
 
 /* Add to Cart Button */
