@@ -161,7 +161,7 @@ body {
   justify-content: space-between;
   position: relative;
 }
-.product-card h5{
+.product-card h5 {
   position: absolute;
   color: rgba(255, 255, 255, 0.831);
   font-size: 17px;
@@ -531,11 +531,25 @@ h2 {
     width: 40px;
     height: 40px;
   }
+  .product-card h5 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.831);
+    font-size: 17px;
+    top: 25%;
+    font-weight: 600;
+    left: 20%;
+  }
 }
 
 @media (max-width: 400px) {
   .categories li {
     font-size: small;
+  }
+  .product-container {
+    gap: 30px;
+  }
+  .product-card {
+    width: 38%;
   }
 }
 @media (max-width: 389px) {
@@ -551,6 +565,90 @@ h2 {
     width: 32%;
   }
 }
+@media (max-width: 389px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .product-container {
+    gap: 25px;
+  }
+  .product-card {
+    width: 36%;
+  }
+  .product-card h5 {
+    color: rgba(255, 255, 255, 0.581);
+    font-size: 14px;
+  }
+  .hero {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 340px) {
+  .categories li {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .product-card .price {
+    font-size: 12px;
+  }
+  .product-card h3 {
+    font-size: 14px;
+  }
+  .logo h1 {
+    font-size: 13px;
+  }
+  .currency,
+  .login,
+  .cart {
+    margin-left: 8px;
+    font-size: 13px;
+  }
+  .narialogo {
+    width: 20px;
+    border-radius: 5px;
+  }
+  .hero-text p {
+    font-size: 10px;
+  }
+  .add-to-cart {
+    background: #000;
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .product-container {
+    gap: 15px;
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 15px;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .availability {
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .modal-right {
+    flex: 1;
+    padding: 10px;
+  }
+  .description {
+    font-size: 10px;
+  }
+  .modal-right {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+  }
+  .modal-content {
+    width: 95%;
+    padding: 8px;
+  }
+}
+
 /* Modal styling */
 .cart-modal {
   display: none;
