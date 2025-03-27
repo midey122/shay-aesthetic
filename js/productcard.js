@@ -238,11 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Product price data
   const productPrices = {
-    "lip mask": {
-      "1 piece": 5000,
-      "3 pieces": 14000,
-      "6 pieces": 27000,
-    },
     "Sadoer mouth wash": {
       "1 piece": 500,
       "3 pieces": 19000,
@@ -250,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "12 pieces": 3600,
       "20 pieces": 6000,
     },
-    "Transparent  flower  claw clip": {
+    "Transparent flower claw clip": {
       "3 pieces": 4500,
       "6 pieces": 9000,
       "12 pieces": 18000,
@@ -379,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "6 pieces": 5700,
       "12 pieces": 10800,
     },
-    "Cute Barbie hair clip": {
+    "Cute barbie hair clip": {
       "1 piece": 2800,
       "3 pieces": 6600,
     },
@@ -419,7 +414,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "6 pieces": 11700,
       "12 pieces": 23400,
     },
-    "Claw Animal chic": {
+    "Claw Animal Chic": {
       "1 piece": 3000,
       "3 pieces": 5850,
       "6 pieces": 11700,
@@ -443,11 +438,106 @@ document.addEventListener("DOMContentLoaded", () => {
       "6 pieces": 11700,
       "12 pieces": 23400,
     },
-    "Claw xiggi ": {
+
+    "Claw xiggi": {
       "1 piece": 3000,
       "3 pieces": 5850,
       "6 pieces": 11700,
       "12 pieces": 23400,
+    },
+
+    "Gulf girl jar lip mask": {
+      "3 pieces": 4500,
+      "6 pieces": 9000,
+      "12 pieces": 18000,
+    },
+    "Essence lip oil": {
+      "3 pieces": 3100,
+      "6 pieces": 6200,
+      "12 pieces": 12400,
+    },
+    "Iman of Noble(pop)": {
+      "3 pieces": 2400,
+      "6 pieces": 4800,
+      "12 pieces": 9600,
+      "24 pieces": 19200,
+    },
+
+    "Tropicals": {
+      "3 pieces": 2850,
+      "6 pieces": 5700,
+      "12 pieces": 11400,
+      "24 pieces": 22800,
+    },
+    "Ushas Lip Mask": {
+      "3 pieces": 3000,
+      "6 pieces": 6000,
+      "12 pieces": 12000,
+      "24 pieces": 24000,
+    },
+    "Victoria Black Lip Balm": {
+      "3 pieces": 2850,
+      "6 pieces": 5700,
+      "12 pieces": 11400,
+      "24 pieces": 22800,
+    },
+    "Karite Lip Oil": {
+      "3 pieces": 3100,
+      "6 pieces": 6200,
+      "12 pieces": 12400,
+      "24 pieces": 24800,
+    },
+    "Iman of Noble(frankbee)": {
+      "3 pieces": 2700,
+      "6 pieces": 5400,
+      "12 pieces": 10800,
+      "24 pieces": 21600,
+    },
+    "Rimocco Lipgloss": {
+      "3 pieces": 2400,
+      "6 pieces": 4800,
+      "12 pieces": 9600,
+      "24 pieces": 19200,
+    },
+    "Crazy Girl Lip Gloss": {
+      "3 pieces": 3000,
+      "6 pieces": 6000,
+      "12 pieces": 12000,
+      "24 pieces": 24000,
+    },
+    "Kiss Beauty Lip Plump": {
+      "3 pieces": 3500,
+      "6 pieces": 7000,
+      "12 pieces": 14000,
+      "24 pieces": 28000,
+    },
+    "Gulf Girl Lip Gloss": {
+      "3 pieces": 3500,
+      "6 pieces": 7000,
+      "12 pieces": 14000,
+      "24 pieces": 28000,
+    },
+    "Victoria Spirit Lip Gloss": {
+      "3 pieces": 4500,
+      "6 pieces": 9000,
+      "12 pieces": 18000,
+      "24 pieces": 36000,
+      "36 pieces": 54000,
+    },
+    "Beauty Model": {
+      "3 pieces": 2400,
+      "6 pieces": 4800,
+      "12 pieces": 9600,
+      "24 pieces": 19200,
+    },
+    "Mini Handfan": {
+      "1 piece": 4200,
+    },
+    "Loofah head band": {
+      "1 piece": 3500,
+      "3 pieces": 6900,
+      "6 pieces": 13800,
+      "12 pieces": 27600,
     },
   };
 
