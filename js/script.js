@@ -1,78 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const cartBtn = document.getElementById("cart-btn");
-  const cartModal = document.getElementById("cart-modal");
-  const closeBtn = document.querySelector(".close-btn");
-  const clearCartBtn = document.getElementById("clear-cart");
-  const cartItemsContainer = document.getElementById("cart-items");
 
-  let cart = [
-    {
-      id: 1,
-      name: "THE DRIVE JERSEY-BLACK",
-      price: 105000,
-      quantity: 1,
-      img: "jersey.png",
-      size: "L",
-    },
-  ];
-
-  function updateCartUI() {
-    cartItemsContainer.innerHTML = "";
-    cart.forEach((item) => {
-      const itemDiv = document.createElement("div");
-      itemDiv.classList.add("cart-item");
-      itemDiv.innerHTML = `
-                <img src="${item.img}
-                }" alt="${item.name}">
-                <p>${item.name} - Size: ${item.size}</p>
-                <div class="quantity">
-                    <button onclick="changeQuantity(${item.id}, -1)">-</button>
-                    <span>${item.quantity}</span>
-                    <button onclick="changeQuantity(${item.id}, 1)">+</button>
-                </div>
-                <p>₦${item.price * item.quantity}</p>
-                <button onclick="removeItem(${item.id})">Remove</button>
-            `;
-      cartItemsContainer.appendChild(itemDiv);
-    });
-  }
-
-  window.changeQuantity = (id, change) => {
-    cart = cart.map((item) =>
-      item.id === id
-        ? { ...item, quantity: Math.max(1, item.quantity + change) }
-        : item
-    );
-    updateCartUI();
-  };
-
-  window.removeItem = (id) => {
-    cart = cart.filter((item) => item.id !== id);
-    updateCartUI();
-  };
-
-  cartBtn.addEventListener("click", () => {
-    cartModal.style.display = "flex";
-    updateCartUI();
-  });
-
-  closeBtn.addEventListener("click", () => {
-    cartModal.style.display = "none";
-  });
-
-  clearCartBtn.addEventListener("click", () => {
-    cart = [];
-    updateCartUI();
-  });
-
-  document.getElementById("continue-shopping").addEventListener("click", () => {
-    cartModal.style.display = "none";
-  });
-
-  document.getElementById("checkout").addEventListener("click", () => {
-    alert("Proceeding to checkout...");
-  });
-});
 
 /// get code
 document.addEventListener("DOMContentLoaded", function () {
@@ -184,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ////select option
 // Get all "Select options" buttons
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
+const addToCartButtons = document.querySelectorAll(".select-option");
 
 // Get modal elements
 const modal = document.querySelector(".product-modal");
